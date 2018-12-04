@@ -1,0 +1,21 @@
+[submodule "litex"]
+	path = litex
+	url = https://github.com/antmicro/litex
+[submodule "vexriscv"]
+	path = vexriscv
+	url = https://github.com/antmicro/VexRiscv
+[submodule "spinal"]
+	path = spinal
+	url = https://github.com/antmicro/SpinalHDL
+[submodule "avalanche"]
+	path = avalanche
+	url = https://github.com/antmicro/avalanche
+[submodule "litedram"]
+	path = litedram
+	url = https://github.com/antmicro/litedram
+[submodule "migen"]
+	path = migen
+	url = https://github.com/m-labs/migen
+[submodule "liteeth"]
+	path = liteeth
+	url = https://github.com/enjoy-digital/liteeth
