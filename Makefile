@@ -2,6 +2,11 @@ SHELL = /bin/bash
 
 all: bitstream-av
 
+arty: update-cpu
+	@pushd litex; \
+	python3 litex/boards/targets/arty.py --cpu-type vexriscv  --csr-csv `pwd`/csr.csv --with-ethernet --cpu-variant jtag; \
+	popd
+
 verilog: update-cpu
 	@pushd litex; \
 	rm -rf build; \
@@ -20,3 +25,4 @@ flash-av:
 update-cpu:
 
 	pushd litex/litex/soc/cores/cpu/vexriscv/verilog && sbt "run-main vexriscv.GenCoreDefault" && popd
+
