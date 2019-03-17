@@ -2,7 +2,7 @@ SHELL = /bin/bash
 
 all: bitstream-av
 
-arty: update-cpu
+arty:
 	@pushd litex; \
 	python3 litex/boards/targets/arty.py --cpu-type vexriscv  --csr-csv `pwd`/csr.csv --with-ethernet --cpu-variant jtag; \
 	popd
